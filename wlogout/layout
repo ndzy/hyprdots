@@ -1,0 +1,29 @@
+{
+    "label" : "lock",
+    "action" : "hyprlock &", 
+}
+
+{
+    "label" : "shutdown",
+    "action" : "systemctl poweroff",
+}
+
+{
+    "label" : "reboot",
+    "action" : "systemctl reboot",
+}
+
+{
+    "label" : "suspend",
+    "action" : "systemctl suspend && hyprlock",
+}
+
+{
+    "label" : "logout",
+    "action" : "hyprctl dispatch exit",
+}
+
+{
+    "label" : "hibernate",
+    "action" : "ya ne ebu"
+}

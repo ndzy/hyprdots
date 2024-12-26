@@ -1,0 +1,107 @@
+@define-color	black  #000000;
+@define-color	black-rgb  rgb(0, 0, 0);
+@define-color	white  #ffffff;
+@define-color	white-rgb  rgb(255, 255, 255);
+@define-color   jopa #ff0000; ""idk lol
+
+* {
+  font-family: Ubuntu Nerd Font Bold;
+  font-size: 14px;
+}
+
+window {
+  margin: 0px;
+  padding: 0px;
+  border: 0.1em solid @black;
+  border-radius: 1em;
+  animation: slideIn 0.2s ease-in-out both;
+}
+
+@keyframes slideIn {
+  0% {
+     opacity: 0;
+  }
+
+  100% {
+     opacity: 1;
+  }
+}
+
+#inner-box {
+  margin: 0px;
+  padding: 0px;
+  border: @white;
+  background-color: none;
+  animation: fadeIn 0.2s ease-in-out both;
+}
+
+@keyframes fadeIn {
+  0% {
+     opacity: 0;
+  }
+
+  0% {
+     opacity: 0;
+  }
+}
+
+#outer-box {
+  margin: 11px;
+  border: @white;
+  background-color: @black;
+}
+
+#scroll {
+  margin: 0px;
+  padding: 0px;
+  border: none;
+  background: none;
+}
+
+#input {
+  margin: 10px 1px;
+  padding: 7px;
+  border-radius: 0.9em;
+  border-color: @white;
+  color: @white;
+  animation: fadeIn 0.2s ease-in-out both;
+}
+
+#input image {
+    border: @white;
+    color: @white;
+}
+
+#input * {
+  outline: 1px solid @white!important;
+}
+
+/* Text */
+#text {
+  margin: 1px;
+  border: @white;
+  color: @white;
+}
+
+#entry {
+  background-color: @black;
+}
+
+#entry arrow {
+  color: @black;
+}
+
+/* Selected Entry */
+#entry:selected {
+  background: @white;
+  border-radius: 10px;
+  border: @white;
+}
+
+#entry:selected #text {
+  color: @black;
+}
+
+#entry:drop(active) {
+  background-color: @white!important;
+}

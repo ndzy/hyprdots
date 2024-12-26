@@ -1,0 +1,72 @@
+{
+	"position": "top",
+	"margin": "0 0 -15",
+	"height": 30,
+	"modules-left": ["hyprland/workspaces"],
+	"modules-center": ["custom/music"],
+	"modules-right": [
+		"tray",
+		"hyprland/language",
+		"pulseaudio",
+		"clock"
+	],
+	
+
+
+	"hyprland/workspaces": {
+		"all-outputs": true,
+		"disable-scroll": true,
+		"warp-on-scroll": false,
+		"format": " {icon} ",
+		"format-icons": {
+			"default": " ",
+			"active": " "
+	}
+},
+	
+	"tray": {
+		"icon-size": 21,
+		"spacing": 2
+	},
+	"clock": {
+		"on-click": "killall waybar && waybar",
+		"format": "{:%H:%M}"
+	},
+	
+	"hyprland/language": {
+		"format": "{}",
+		"format-en": "EN",
+		"format-ru": "RU"
+},
+	
+	"custom/music": {
+        	"format": "  {} {}",
+        	"escape": false,
+        	"interval": 1,
+        	"tooltip": true,
+        	"exec": "playerctl metadata --format='{{(artist)}} − {{ title }}'",
+        	"on-click": "playerctl play-pause",
+        	"on-scroll-up": "playerctl next",
+		"on-scroll-down": "playerctl previous",
+		"max-length": 100
+    },
+
+	
+	"pulseaudio": {
+		"format": "{icon} {volume}%",
+		"tooltip": false,
+		"format-muted": " ",
+		"on-click-right": "blueman-manager",
+		"on-click": "pavucontrol",
+		"scroll-step": 3,
+		"format-icons": {
+			"headphone": "",
+			"hands-free": "",
+			"headset": "",
+			"phone": "",
+			"portable": "",
+			"default": ["", "", " "]
+		}
+	}
+}
+
