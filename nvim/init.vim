@@ -25,9 +25,13 @@ set clipboard=unnamedplus
 """"""""""""""""""
 "Подсветка синтаксиса
 syntax on
+syntax enable
+""""""""""""""""""
+"Поддержка цветов
+set t_Co=256
 """"""""""""""""""
 "Тема
-colorscheme wildcharm
+colorscheme retrobox
 """"""""""""""""""
 "Номер строки
 set number
@@ -50,11 +54,12 @@ call plug#begin("~/.vim/plugged")
 "Файловый Менеджер:
 
 Plug 'scrooloose/nerdtree'
+let g:NERDTreeShowLineNumbers = 1
 
 "Автозапуск Файлового Менеджера:
 
-autocmd StdinReadPre * let s:std_in=1
-autocmd VimEnter * NERDTree | wincmd p
+"autocmd StdinReadPre * let s:std_in=1
+"autocmd VimEnter * NERDTree | wincmd p
 
 "Хоткей Для Открытия Файлового Менеджера:
 
@@ -77,18 +82,18 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 
 let g:airline_theme='default'
-let g:airline#extensions#tabline#enabled = 1
-let g:airline#extensions#tabline#left_sep = ' '
-let g:airline#extensions#tabline#left_alt_sep = '|'
+
+"let g:airline#extensions#tabline#enabled = 1
+"let g:airline#extensions#tabline#left_sep = ' '
+"let g:airline#extensions#tabline#left_alt_sep = '|'
+
 let g:airline_powerline_fonts = 1
 let g:airline_statusline_ontop=0
 
-let g:airline_theme='monochrome'
+let g:airline_theme='base16_classic'
 
 let g:airline#extensions#tabline#formatter = 'default'
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""
 
 call plug#end()
-
-
