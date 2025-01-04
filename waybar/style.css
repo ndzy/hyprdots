@@ -1,3 +1,8 @@
+@define-color	    black        #000000;
+@define-color	    black-rgb    rgb(0, 0, 0);
+@define-color	    white        #ffffff;
+@define-color	    white-rgb    rgb(255, 255, 255);
+
 * {
     font-family: "Ubuntu Nerd Font", monospace;
     font-weight: bold;
@@ -7,14 +12,14 @@
 
 window#waybar {
     border-radius: 0px;
-    border-color: #000000;
-    background: #000000;
+    border-color: @black;
+    background: @black;
 }
 
 
 #workspaces button {
     padding: 0px;
-    color: #ffffff;
+    color: @white;
     margin-right: 0px;
 }
 
@@ -35,23 +40,24 @@ window#waybar {
 
 
 #clock {
-    color: #ffffff;
+    color: @white;
     margin-right: 10px;
     padding-right: 10px;
 }
 
 
 #pulseaudio {
-    color: #ffffff;
+    color: @white;
     margin-right: 5px;
     padding-right: 5px;
 
 }
 
 #language {
-    color: #ffffff;
+    color: @white;
     margin-right: 5px;
     padding-right: 5px;
   
 }
+
 
