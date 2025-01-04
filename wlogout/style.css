@@ -1,8 +1,8 @@
-@define-color	  black      #000000;
-@define-color	  black-rgb  rgb(0, 0, 0);
-@define-color	  white      #ffffff;
-@define-color	  white-rgb  rgb(255, 255, 255);
-@define-color     bg         rgba(10, 10, 10, 0.9);
+@define-color	  black       #000000;
+@define-color	  black-rgb   rgb(0, 0, 0);
+@define-color	  white       #ffffff;
+@define-color	  white-rgb   rgb(255, 255, 255);
+@define-color     bg          rgba(10, 10, 10, 0.9);
 
 
 window {
