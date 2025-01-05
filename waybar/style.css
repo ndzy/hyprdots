@@ -1,7 +1,7 @@
 @define-color	   black       #000000;
-@define-color	   black-rgb   rgb(0, 0, 0);
-@define-color      white       #ffffff;
-@define-color      white-rgb   rgb(255, 255, 255);
+@define-color	   black-rgb   rgba(0, 0, 0, 0);
+@define-color    white       #ffffff;
+@define-color    white-rgb   rgb(255, 255, 255);
 
 * {
     font-family: "Ubuntu Nerd Font", monospace;
@@ -13,7 +13,7 @@
 window#waybar {
     border-radius: 0px;
     border-color: @black;
-    background: @black;
+    background: @black-rgb;
 }
 
 
@@ -28,20 +28,20 @@ window#waybar {
 }
 
 #tray {
-    margin-right: 8px;
-    padding-right: 8px;
+    margin-right: 12px;
+		padding-top: 1px;
 }
 
 #workspaces {
     margin-left: 10px;
     padding-right: 0px;
-    padding-left: 5px;
+    padding-left: 0px;
 }
 
 
 #clock {
     color: @white;
-    margin-right: 10px;
+    margin-right: 0px;
     padding-right: 10px;
 }
 
