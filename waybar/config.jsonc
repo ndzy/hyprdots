@@ -1,7 +1,7 @@
 {
 	"position": "top",
 	"margin": "0 0 -15",
-	"height": 30,
+	"height": 20,
 	"modules-left": ["hyprland/workspaces"],
 	"modules-center": ["custom/music"],
 	"modules-right": [
@@ -14,7 +14,7 @@
 
 
 	"hyprland/workspaces": {
-		"all-outputs": true,
+		"all-outputs": false,
 		"disable-scroll": true,
 		"warp-on-scroll": false,
 		"format": " {icon} ",
@@ -30,6 +30,7 @@
 	},
 	"clock": {
 		"on-click": "killall waybar && waybar",
+		"on-click-right": "killall hyprpaper && hyprpaper",
 		"format": "{:%H:%M}"
 	},
 	
