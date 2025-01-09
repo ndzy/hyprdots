@@ -1,18 +1,18 @@
-@define-color      black       #000000;
-@define-color	   black-rgb   rgb(0, 0, 0);
-@define-color	   white       #ffffff;
-@define-color	   white-rgb   rgb(255, 255, 255);
+@define-color	    black         #000000;
+@define-color	    black-rgb     rgb(0, 0, 0);
+@define-color	    white         #ffffff;
+@define-color	    white-rgb     rgb(255, 255, 255);
 
 * {
   font-family: Ubuntu Nerd Font Bold;
-  font-size: 14px;
+  font-size: 15px;
 }
 
 window {
   margin: 0px;
   padding: 0px;
-  border: 0.1em solid @black;
-  border-radius: 1em;
+  border: 0.1em solid @white;
+  border-radius: 0.2em;
   animation: slideIn 0.2s ease-in-out both;
 }
 
