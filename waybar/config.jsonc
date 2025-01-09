@@ -1,7 +1,7 @@
 {
 	"position": "top",
-	"margin": "0 0 -15",
-	"height": 20,
+	"margin": "10 0 -10",
+	"height": 10,
 	"modules-left": ["hyprland/workspaces"],
 	"modules-center": ["custom/music"],
 	"modules-right": [
@@ -17,7 +17,7 @@
 		"all-outputs": false,
 		"disable-scroll": true,
 		"warp-on-scroll": false,
-		"format": " {icon} ",
+		"format": "{icon}",
 		"format-icons": {
 			"default": " ",
 			"active": " "
@@ -25,13 +25,13 @@
 },
 	
 	"tray": {
-		"icon-size": 21,
+		"icon-size": 19,
 		"spacing": 2
 	},
 	"clock": {
 		"on-click": "killall waybar && waybar",
 		"on-click-right": "killall hyprpaper && hyprpaper",
-		"format": "{:%H:%M}"
+		"format": " {:%H:%M}"
 	},
 	
 	"hyprland/language": {
@@ -44,7 +44,7 @@
         	"format": "  {} {}",
         	"escape": false,
         	"interval": 1,
-        	"tooltip": true,
+        	"tooltip": false,
         	"exec": "playerctl metadata --format='{{(artist)}} − {{ title }}'",
         	"on-click": "playerctl play-pause",
         	"on-scroll-up": "playerctl next",
