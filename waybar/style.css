@@ -1,63 +1,82 @@
-@define-color	   black       #000000;
-@define-color	   black-rgb   rgba(0, 0, 0, 0);
-@define-color    white       #ffffff;
-@define-color    white-rgb   rgb(255, 255, 255);
+@define-color	    black        #000000;
+@define-color	    black-rgb    rgb(0, 0, 0);
+@define-color	    white        #ffffff;
+@define-color	    white-rgb    rgb(255, 255, 255);
 
 * {
-    font-family: "Ubuntu Nerd Font", monospace;
-    font-weight: bold;
+	  font-family: "Ubuntu Nerd Font";
+	  font-weight: bold;
     font-size: 14px;
-    min-height: 25px;
+		border-radius: 10px;
+		padding: 0px;
+		min-height: 28px;
 }
 
 window#waybar {
-    border-radius: 0px;
-    border-color: @black;
-    background: @black-rgb;
+    background: transparent;
 }
 
 
 #workspaces button {
-    padding: 0px;
+    margin-left: 3px;
+		margin-right: 3px;
     color: @white;
-    margin-right: 0px;
 }
 
 #workspaces button.active {
-    color: #808080;
+		color: #808080;
 }
 
 #tray {
-    margin-right: 12px;
-		padding-top: 1px;
+		margin-right: 20px;
+		background: @black;
+		border: 2px solid white;
+		padding-left: 10px;
+		padding-right: 10px;
 }
 
 #workspaces {
-    margin-left: 10px;
-    padding-right: 0px;
-    padding-left: 0px;
+    margin-left: 20px;
+    background: @black;
+		border: 2px solid white;
+		padding-left: 10px;
+		padding-right: 10px;
 }
 
 
 #clock {
     color: @white;
-    margin-right: 0px;
-    padding-right: 10px;
+    margin-right: 20px;
+		background: @black;
+		border: 2px solid white;
+		padding-left: 10px;
+		padding-right: 10px;
 }
 
 
 #pulseaudio {
     color: @white;
-    margin-right: 5px;
-    padding-right: 5px;
-
+    margin-right: 20px;
+		background: @black;
+		border: 2px solid white;
+		padding-left: 10px;
+		padding-right: 10px;
 }
 
 #language {
     color: @white;
-    margin-right: 5px;
-    padding-right: 5px;
-  
+    margin-right: 20px;
+		background: @black;
+		border: 2px solid white;
+		padding-left: 10px;
+		padding-right: 10px;
 }
 
+#custom-music {
+		background: @black;
+		color: @white;
+		border: 2px solid white;
+		padding-left: 10px;
+		padding-right: 10px;
+}
 
