@@ -31,7 +31,7 @@
 	"clock": {
 		"on-click": "killall waybar && waybar",
 		"on-click-right": "killall hyprpaper && hyprpaper",
-		"format": " {:%H:%M}"
+		"format": "󰥔 {:%H:%M}"
 	},
 	
 	"hyprland/language": {
