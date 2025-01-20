@@ -31,7 +31,7 @@ syntax enable
 set t_Co=256
 """"""""""""""""""
 "Тема
-colorscheme retrobox
+#colorscheme retrobox
 """"""""""""""""""
 "Номер строки
 set number
