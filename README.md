@@ -2,7 +2,7 @@
 
 - Distro: Arch Linux
 
-- Compositor: Wayland
+- Compositor: Hyprland
 
 - Terminal: Kitty
 
