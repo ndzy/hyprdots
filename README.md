@@ -1,12 +1,14 @@
----
 # MCHROME RICE
 
 - Distro: Arch Linux
 
 - Compositor: Wayland
 
+- Terminal: Kitty
+
 - Launcher: Wofi
 
-- Browser: FireFox
+- File-Manager: Thunar
 
+- Browser: Firefox
 ---
