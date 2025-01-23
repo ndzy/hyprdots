@@ -64,8 +64,6 @@
 			"headphone": "",
 			"hands-free": "",
 			"headset": "",
-			"phone": "",
-			"portable": "",
 			"default": ["", "", " "]
 		}
 	}
